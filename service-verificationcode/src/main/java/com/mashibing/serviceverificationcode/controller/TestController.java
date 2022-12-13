@@ -1,15 +1,13 @@
-
-package com.mashibing.apipassenger.controller;
+package com.mashibing.serviceverificationcode.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.lang.annotation.Retention;
-
 @RestController
 public class TestController {
+
     @GetMapping("/test")
     public String test(){
-        return "test api passenger";
+        return "test service-verificatpioncode";
     }
 }
