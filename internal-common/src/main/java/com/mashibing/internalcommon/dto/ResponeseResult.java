@@ -23,6 +23,15 @@ public class ResponeseResult<T>{
     }
 
     /**
+     * 成功
+     * @param <T>
+     * @return
+     */
+    public static <T> ResponeseResult success(){
+        return new ResponeseResult().setCode(CommonStatusEnum.SUCCESS.getCode()).setMessage(CommonStatusEnum.SUCCESS.getValue());
+    }
+
+    /**
      * 失败： 统一的失败
      * @param data
      * @param <T>
