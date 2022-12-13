@@ -12,6 +12,7 @@ public class VerificationCodeController {
 
     @Autowired
     private VerificationCodeService verificationCodeService;
+
     @GetMapping("/verification-code")
    public String  verificationCode(@RequestBody VerificationCodeDTO verificationCodeDTO){
         String passengerPhone = verificationCodeDTO.getPassengerPhone();
